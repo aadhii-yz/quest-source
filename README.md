@@ -15,8 +15,10 @@ Bundles contain **only MIT-licensed course content**; see [Licensing](#licensing
 
 ## Status
 
-Skeleton with a working, tested builder. No content release has been published
-yet.
+Working, tested builder. First release
+[`content-0.1.0`](https://github.com/aadhii-yz/quest-source/releases/tag/content-0.1.0)
+is published: 12 course bundles, `index.json` and `checksums.txt`, all
+digest-verified by the release workflow.
 
 - `courses.json` — pinned upstream repositories and commits (12 CodeCrafters
   courses; must match `internal/provider/codecrafters/sources.go` in quest).

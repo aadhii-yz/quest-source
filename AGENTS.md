@@ -89,23 +89,19 @@ Repository:
 
 ## Handoff: next tasks
 
-1. Run the builder against the real pins and fix anything the synthetic fixtures
-   did not catch:
-   ```sh
-   go run ./cmd/build -release dev
-   ```
-   Check bundle sizes, languages/stage counts in `dist/index.json`, and that
-   every bundle's `manifest.json` digest matches `index.json`.
-2. Inspect one extracted bundle by hand (grep or shell) for unexpected files.
-3. Publish the first `content-0.1.0` release once (1) and (2) pass.
-4. Add a CI job that fails if `courses.json` commits drift from quest's pins.
+Done: real build of all 12 pinned courses, manual bundle inspection, and the
+first release (`content-0.1.0`, 12 bundles + index + checksums, all verified by
+the release workflow). Quest pins it in `ROADMAP.md` Phase 3.
+
+Remaining:
+
+1. Add a CI job that fails if `courses.json` commits drift from quest's pins.
    Parse `sources.go` with a small Go program or run the check from a quest
    checkout in the quest repo instead; do not guess.
-5. In quest (`ROADMAP.md`, Phase 3), implement the consumer:
-   pin this release tag + `index.json` digest, fetch through `internal/cache`,
-   validate manifest `spec.commit` against `sources.go`, and extract into the
-   content cache.
-6. Optional later: signing the index/manifest, or a user-selectable content
+2. In quest, implement the consumer (Phase 3): pin the release tag + index
+   digest, fetch through `internal/cache`, validate manifest `spec.commit`
+   against `sources.go`, and extract into the content cache.
+3. Optional later: signing the index/manifest, or a user-selectable content
    channel. Both are out of scope until the pinned path works end to end.
 
 Commit messages: lowercase, semicolon-separated clauses, no Conventional
