@@ -1,0 +1,7 @@
+This repository's own tooling and documentation are MIT licensed (see LICENSE).
+
+Published course bundles contain content from upstream CodeCrafters course
+repositories (course-definition.yml, stage descriptions, starter templates).
+Those repositories are MIT licensed; each bundle embeds the upstream LICENSE
+file and its manifest records the source repository, pinned commit and license.
+Bundles never contain tester source code or tester binaries.

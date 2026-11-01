@@ -1,0 +1,55 @@
+name: release
+
+on:
+  push:
+    tags:
+      - "content-*"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: test
+        run: go test ./... -race
+
+      - name: build bundles
+        run: |
+          go run ./cmd/build \
+            -release "${GITHUB_REF_NAME}" \
+            -builder-repo "${GITHUB_REPOSITORY}" \
+            -builder-commit "${GITHUB_SHA}"
+
+      - name: verify checksums
+        working-directory: dist
+        run: sha256sum -c checksums.txt
+
+      - name: publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}" dist/* \
+            --title "${GITHUB_REF_NAME}" \
+            --generate-notes
+
+      - name: verify published assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh release download "${GITHUB_REF_NAME}" --dir verify
+          cd verify
+          sha256sum -c checksums.txt

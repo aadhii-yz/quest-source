@@ -1,0 +1,89 @@
+{
+  "provider": "codecrafters",
+  "courses": [
+    {
+      "slug": "shell",
+      "name": "Build your own Shell",
+      "repo": "https://github.com/codecrafters-io/build-your-own-shell",
+      "commit": "1b6a5b9a16f695429352f12e8289b96b7a0314bb",
+      "license": "MIT"
+    },
+    {
+      "slug": "redis",
+      "name": "Build your own Redis",
+      "repo": "https://github.com/codecrafters-io/build-your-own-redis",
+      "commit": "09b175e62b02299d190465092d45aeaaa6435855",
+      "license": "MIT"
+    },
+    {
+      "slug": "grep",
+      "name": "Build your own Grep",
+      "repo": "https://github.com/codecrafters-io/build-your-own-grep",
+      "commit": "6d54daaad5632b077289c750f01e0df61b4fde98",
+      "license": "MIT"
+    },
+    {
+      "slug": "claude-code",
+      "name": "Build your own Claude Code",
+      "repo": "https://github.com/codecrafters-io/build-your-own-claude-code",
+      "commit": "56a12aeef52d2748eaf51a20e44e613f4bbee59a",
+      "license": "MIT"
+    },
+    {
+      "slug": "interpreter",
+      "name": "Build your own Interpreter",
+      "repo": "https://github.com/codecrafters-io/build-your-own-interpreter",
+      "commit": "e05193b218567c80504f5358585fbfe2908ffbca",
+      "license": "MIT"
+    },
+    {
+      "slug": "bittorrent",
+      "name": "Build your own BitTorrent",
+      "repo": "https://github.com/codecrafters-io/build-your-own-bittorrent",
+      "commit": "2c63fcce4328dee6faeb682b21206d2b26b510a5",
+      "license": "MIT"
+    },
+    {
+      "slug": "kafka",
+      "name": "Build your own Kafka",
+      "repo": "https://github.com/codecrafters-io/build-your-own-kafka",
+      "commit": "d759358f0f880994ae6ba86871523310b39fc0c9",
+      "license": "MIT"
+    },
+    {
+      "slug": "git",
+      "name": "Build your own Git",
+      "repo": "https://github.com/codecrafters-io/build-your-own-git",
+      "commit": "34f4e91a91f8a435830eca21080b6e5e0b1ec48a",
+      "license": "MIT"
+    },
+    {
+      "slug": "sqlite",
+      "name": "Build your own SQLite",
+      "repo": "https://github.com/codecrafters-io/build-your-own-sqlite",
+      "commit": "b58b43a5b0b5321ac39fe05bc7298bd30d924654",
+      "license": "MIT"
+    },
+    {
+      "slug": "dns-server",
+      "name": "Build your own DNS server",
+      "repo": "https://github.com/codecrafters-io/build-your-own-dns-server",
+      "commit": "6665dd2fd72ab3ef709c14a0236befac1941ab38",
+      "license": "MIT"
+    },
+    {
+      "slug": "http-server",
+      "name": "Build your own HTTP server",
+      "repo": "https://github.com/codecrafters-io/build-your-own-http-server",
+      "commit": "e086ba45900544ab17cd7f5bc9c4f094c8e87157",
+      "license": "MIT"
+    },
+    {
+      "slug": "docker",
+      "name": "Build your own Docker",
+      "repo": "https://github.com/codecrafters-io/build-your-own-docker",
+      "commit": "3c07c87a45f32355a298505d7ca75372aed3ca95",
+      "license": "MIT"
+    }
+  ]
+}
