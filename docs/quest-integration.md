@@ -22,7 +22,7 @@ Recommended pin file in quest (e.g. `internal/provider/codecrafters/content.go`)
 const (
     ContentRelease = "content-2026.11"
     ContentIndexSHA256 = "<sha256 of index.json>"
-    ContentRepo = "aadhii-yz/quest-content" // owner/repo, no scheme
+    ContentRepo = "aadhii-yz/quest-source" // owner/repo, no scheme
 )
 ```
 

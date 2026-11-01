@@ -46,7 +46,7 @@ func (f Fetcher) Fetch(ctx context.Context, pin Pin) ([]byte, error) {
 	if err != nil {
 		return nil, err
 	}
-	req.Header.Set("User-Agent", "quest-content/1 (+https://github.com/aadhii-yz/quest)")
+	req.Header.Set("User-Agent", "quest-source/1 (+https://github.com/aadhii-yz/quest)")
 
 	client := f.Client
 	if client == nil {

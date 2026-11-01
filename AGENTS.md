@@ -1,4 +1,4 @@
-# AGENTS.md — quest-content
+# AGENTS.md — quest-source
 
 Guidance for agents working in this repository.
 
@@ -9,7 +9,7 @@ extracts an allow-listed subset, and publishes per-course bundles plus an index
 and checksums. The app consumes those release assets; it never clones upstream
 repos at runtime.
 
-This repository is checked out at `quest/content/` and is gitignored by the
+This repository is checked out at `quest/quest-source/` and is gitignored by the
 quest repo. It is its own git repository with its own CI and releases.
 
 ## Layout

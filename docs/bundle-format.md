@@ -1,6 +1,6 @@
 # Bundle format
 
-This is the contract between `quest-content` (producer) and quest (consumer).
+This is the contract between `quest-source` (producer) and quest (consumer).
 Treat every field and filename as a wire format.
 
 ## Release assets
@@ -52,7 +52,7 @@ bytes and digest.
     "license_file": "LICENSE"
   },
   "builder": {
-    "repo": "aadhii-yz/quest-content",
+    "repo": "aadhii-yz/quest-source",
     "commit": "<40 hex or empty for local dev builds>"
   },
   "files": {

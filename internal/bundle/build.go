@@ -74,7 +74,7 @@ func Build(ctx context.Context, opts Options) (Index, error) {
 }
 
 func buildCourse(ctx context.Context, opts Options, pin Pin) (CourseEntry, error) {
-	dir, err := os.MkdirTemp("", "quest-content-"+pin.Slug+"-*")
+	dir, err := os.MkdirTemp("", "quest-source-"+pin.Slug+"-*")
 	if err != nil {
 		return CourseEntry{}, err
 	}

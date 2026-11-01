@@ -16,7 +16,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/aadhii-yz/quest-content/internal/bundle"
+	"github.com/aadhii-yz/quest-source/internal/bundle"
 )
 
 func main() {
@@ -32,7 +32,7 @@ func main() {
 	flag.Parse()
 
 	if err := run(*pinsPath, *dist, *release, *builderRepo, *builderCommit, *only, *fetchBase); err != nil {
-		fmt.Fprintf(os.Stderr, "quest-content: %v\n", err)
+		fmt.Fprintf(os.Stderr, "quest-source: %v\n", err)
 		os.Exit(1)
 	}
 }

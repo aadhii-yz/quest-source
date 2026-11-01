@@ -1,4 +1,4 @@
-module github.com/aadhii-yz/quest-content
+module github.com/aadhii-yz/quest-source
 
 go 1.27.1
 

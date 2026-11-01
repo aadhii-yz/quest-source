@@ -1,4 +1,4 @@
-# quest-content
+# quest-source
 
 Per-course content bundles for QuesTUI (`quest`), built from pinned
 CodeCrafters course repositories.

@@ -296,7 +296,7 @@ func TestBuild(t *testing.T) {
 		Pins:    Pins{Provider: "codecrafters", Courses: []Pin{pin}},
 		Dist:    dist,
 		Release: "content-test",
-		Builder: Builder{Repo: "example/quest-content", Commit: "bbbb"},
+		Builder: Builder{Repo: "example/quest-source", Commit: "bbbb"},
 		Fetcher: Fetcher{BaseURL: srv.URL, Client: srv.Client()},
 	})
 	if err != nil {
@@ -397,7 +397,7 @@ func TestBuildDeterministic(t *testing.T) {
 	opts := Options{
 		Pins:    Pins{Provider: "codecrafters", Courses: []Pin{pin}},
 		Release: "content-test",
-		Builder: Builder{Repo: "example/quest-content", Commit: "bbbb"},
+		Builder: Builder{Repo: "example/quest-source", Commit: "bbbb"},
 		Fetcher: Fetcher{BaseURL: srv.URL, Client: srv.Client()},
 	}
 	opts.Dist = filepath.Join(t.TempDir(), "one")
