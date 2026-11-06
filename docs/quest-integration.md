@@ -1,7 +1,8 @@
 # Consuming content from quest
 
-This describes the intended app-side integration (quest `ROADMAP.md`, Phase 3).
-Nothing here is implemented in quest yet.
+This describes the app-side integration (quest `ROADMAP.md`, Phase 3). The
+verified loader lives in quest's `internal/content`; wiring it into the catalog
+and course screens is the remaining step.
 
 ## Trust chain
 
@@ -16,7 +17,7 @@ The app pins a **release tag and an index digest**. That is the only value that
 must be updated to move content forward. Everything else is verified from the
 index.
 
-Recommended pin file in quest (e.g. `internal/provider/codecrafters/content.go`):
+Pins live in quest's `internal/content/content.go`:
 
 ```go
 const (
